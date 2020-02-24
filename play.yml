@@ -1,0 +1,17 @@
+---
+hosts: Test-Servers
+ tasks:
+  - name: install apache
+    apt: name=apache2 state=latest
+    become: yes
+  - name: install php
+    apt: name=php state=latest
+    become: yes
+  - name: myspql
+    apt: name=mysqlserver state=latest
+    become: yes
+  - name: copy source code
+    copy: 
+     src: https://github.com/praveenps1975/p0702
+     dest: /var/www/html/p0702.html 
+     become: yes
