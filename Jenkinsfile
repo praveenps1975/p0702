@@ -4,7 +4,8 @@ pipeline {
    stages {
       stage('Test') {
          steps {
-            echo 'Test Deployment'
+            sh 'apache2 install'
+            echo 'Test Deployment Done'
          }
       }
    }
