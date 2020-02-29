@@ -7,7 +7,7 @@ hosts: Test-Servers
   - name: install php
     apt: name=php state=latest
     become: yes
-  - name: myspql
+  - name: mysql
     apt: name=mysqlserver state=latest
     become: yes
   - name: copy source code
