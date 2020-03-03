@@ -1,5 +1,5 @@
 ---
-hosts: Test-Servers
+hosts: Test
  tasks:
   - name: install apache
     apt: name=apache2 state=latest
