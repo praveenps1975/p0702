@@ -1,0 +1,7 @@
+---
+ - name: playbook name
+   hosts: Test-Servers
+   tasks:
+     - name:Install apache2
+       apt: name: apache2 state: latest
+       become: yes
